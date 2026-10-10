@@ -1,0 +1,906 @@
+﻿<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300..800;1,6..12,300..800&amp;family=Literata:ital,opsz,wght@0,7..72,400..700;1,7..72,400..700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        "surface-bright": "#faf6f0",
+        "primary-container": "#e1ede4",
+        "on-primary": "#ffffff",
+        "surface-tint": "#4a7c59",
+        "on-secondary": "#ffffff",
+        "surface-container-high": "#eae5dc",
+        "tertiary": "#8c6b3e",
+        "on-tertiary-fixed": "#221a05",
+        "surface-variant": "#e6e1d7",
+        "on-secondary-fixed-variant": "#4a4538",
+        "inverse-surface": "#243026",
+        "surface": "#ffffff",
+        "primary-fixed-dim": "#8ecf9e",
+        "on-primary-fixed": "#0f2817",
+        "error": "#b83230",
+        "surface-container-lowest": "#ffffff",
+        "on-error-container": "#690005",
+        "on-error": "#ffffff",
+        "on-secondary-fixed": "#1e1a13",
+        "inverse-on-surface": "#f5f0e8",
+        "primary-fixed": "#c8e8d0",
+        "outline-variant": "#e3ded4",
+        "on-tertiary-fixed-variant": "#554020",
+        "primary": "#4a7c59",
+        "primary-hover": "#3c6648",
+        "inverse-primary": "#8ecf9e",
+        "tertiary-fixed-dim": "#dcc48e",
+        "surface-dim": "#f0ece3",
+        "on-tertiary": "#ffffff",
+        "tertiary-container": "#f6ede0",
+        "outline": "#d6d0c4",
+        "on-secondary-container": "#4a4439",
+        "background": "#f9f8f5",
+        "on-primary-container": "#20462c",
+        "error-container": "#ffdad8",
+        "secondary-container": "#f0ebdF",
+        "on-surface": "#1e2921",
+        "surface-container": "#f4f0e7",
+        "on-surface-variant": "#5f6c61",
+        "secondary-fixed-dim": "#d4ccbf",
+        "surface-container-highest": "#e2ded4",
+        "on-tertiary-container": "#4e3a1d",
+        "on-primary-fixed-variant": "#2a6038",
+        "tertiary-fixed": "#f8e0a8",
+        "surface-container-low": "#fdfcf9",
+        "secondary-fixed": "#f0e8db",
+        "on-background": "#1e2921",
+        "secondary": "#637a6b",
+        "warm-sand": "#c28854"
+      },
+      borderRadius: {
+        "DEFAULT": "0.75rem",
+        "lg": "0.75rem",
+        "xl": "0.75rem",
+        "full": "9999px"
+      },
+      fontFamily: {
+        "headline": ["Literata", "serif"],
+        "display": ["Literata", "serif"],
+        "body": ["Nunito Sans", "sans-serif"],
+        "code-metric": ["JetBrains Mono", "monospace"]
+      }
+    }
+  }
+};</script></head><body class="bg-background font-body text-on-surface antialiased selection:bg-primary/20 selection:text-primary"><header class="fixed top-0 w-full z-50 bg-background/85 backdrop-blur-md border-b border-outline/50 shadow-sm"><div class="h-20 max-w-[1280px] mx-auto px-6 lg:px-8 flex items-center justify-between gap-4"><div class="flex items-center gap-4 min-w-0"><div class="h-10 w-10 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center font-headline font-bold text-primary text-base flex-shrink-0">KO</div><div class="flex flex-col min-w-0"><div class="flex items-center gap-2"><span class="font-headline font-semibold text-lg text-on-surface truncate tracking-tight">Khalid Osman Omer</span><span class="hidden lg:inline-flex items-center px-2.5 py-0.5 rounded-full bg-secondary-container/80 text-on-secondary-container font-body text-xs font-semibold uppercase tracking-wider">Commercial Ops &amp; B2B Lead</span></div></div></div><nav class="hidden xl:flex items-center gap-1 bg-surface-container/70 border border-outline/60 px-2 py-1.5 rounded-full shadow-sm"><a aria-current="page" class="px-4 py-1.5 text-xs font-bold uppercase tracking-wider transition-all bg-primary text-on-primary rounded-full shadow-sm" data-path="overview" href="#">Overview</a><a class="px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider text-on-surface-variant hover:bg-surface hover:text-on-surface transition-all" data-path="impact-metrics" href="#impact-metrics">Impact Metrics</a><a class="px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider text-on-surface-variant hover:bg-surface hover:text-on-surface transition-all" data-path="experience" href="#experience">Experience</a><a class="px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider text-on-surface-variant hover:bg-surface hover:text-on-surface transition-all" data-path="credentials-skills" href="#competencies">Credentials &amp; Skills</a><a class="px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider text-on-surface-variant hover:bg-surface hover:text-on-surface transition-all" data-path="contact" href="#schedule-suite">Contact</a></nav><div class="flex items-center gap-3 flex-shrink-0"><a href="resume_template.html" target="_blank" class="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-surface hover:bg-surface-container border border-outline/70 text-on-surface text-xs font-bold tracking-wide transition-all shadow-sm"><span class="material-symbols-outlined text-[17px] text-primary">download</span><span>Download 1-Page PDF</span></a><a class="inline-flex items-center px-4 py-2 rounded-xl bg-primary hover:bg-primary-hover text-on-primary text-xs font-bold uppercase tracking-wider transition-all shadow-sm shadow-primary/25" href="#schedule-suite">Schedule Strategic Call</a><div class="relative flex items-center pl-1"><img alt="Khalid Osman Omer Avatar" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZ8Zs2PcBp1ivlzquZ-eSeMGHOsU6oG2L_ADC0ci0qzAIlqnoQc5okrEpcqDlNe6GBVXMgUrVrGy4LjXkkcfNpSIjVwNU1hTrRhIU8FGDpNy5xMfMSsVjl8S9_KNNkdFOK7FznJ5H6n3gw8z1wXPlAfoJ0xyjkwJLmdfzw8MlZd4fxF92btM5ffjGxz1bvbxlGFPQe2FZfJDUgGpLApt7T5X9eyNN4sVR3_9lzGdONTNRGMglHW22z"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 bg-primary rounded-full ring-2 ring-background"></span></div></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full relative">
+<!-- Ambient Atmospheric Earth Warmth Glows -->
+<div class="pointer-events-none absolute -top-16 left-1/2 -translate-x-1/2 w-[720px] h-[360px] bg-primary/8 blur-[100px] rounded-full"></div>
+<div class="pointer-events-none absolute top-[800px] right-0 w-[480px] h-[480px] bg-warm-sand/8 blur-[120px] rounded-full"></div>
+<!-- MAIN CONTAINER -->
+<div class="max-w-[1280px] w-full mx-auto px-6 lg:px-8 py-10 flex flex-col gap-14 relative z-10">
+<!-- 1. HERO SECTION -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+<!-- Left Hero Column (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col justify-between gap-8 p-8 lg:p-10 rounded-xl bg-surface border border-outline/70 shadow-sm relative overflow-hidden">
+<div class="flex flex-col gap-5 relative z-10">
+<!-- Availability Pulse Pill -->
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-secondary-container/70 border border-outline/50 w-fit">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+<span class="font-body text-xs font-semibold text-on-surface-variant tracking-wide uppercase">
+              Available for APAC &amp; Global Roles • Bangsar, Kuala Lumpur (GMT+8)
+            </span>
+</div>
+<!-- Hero Main Title -->
+<h1 class="font-headline text-3xl sm:text-4xl lg:text-5xl text-on-surface font-semibold tracking-tight leading-[1.18]">
+            Scaling B2B Market Opportunities Through <span class="text-primary italic font-normal">Data Intelligence</span> &amp; Relentless Execution.
+          </h1>
+<!-- Subheading -->
+<p class="font-body text-base lg:text-lg text-on-surface-variant max-w-2xl leading-relaxed">
+            Commercial Operations &amp; B2B Growth Specialist bridging quantitative pipeline scoring, CRM intelligence, and high-conversion enterprise deal mechanics to secure sustainable revenue velocity.
+          </p>
+</div>
+<!-- Call To Actions & Quick Actions -->
+<div class="flex flex-col gap-6 pt-2 relative z-10">
+<div class="flex flex-wrap items-center gap-3">
+<!-- Primary Action -->
+<a class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary hover:bg-primary-hover text-on-primary font-body text-sm font-bold transition-all shadow-md shadow-primary/25" href="#schedule-suite">
+<span class="material-symbols-outlined text-[19px]">calendar_today</span>
+<span>Book 30-Min Strategy Call</span>
+</a>
+<!-- Quick Email Copy Pill -->
+<button class="group relative inline-flex items-center gap-2 px-4 py-3 rounded-xl bg-surface-container-low hover:bg-surface-container border border-outline/80 text-on-surface transition-all text-xs font-code-metric font-medium" id="copy-email-btn" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary group-hover:scale-110 transition-transform">content_copy</span>
+<span id="email-text">khaledothman546@gmail.com</span>
+<span class="absolute -top-8 left-1/2 -translate-x-1/2 px-2.5 py-1 rounded-full bg-inverse-surface text-inverse-on-surface font-body text-[11px] font-semibold uppercase opacity-0 pointer-events-none transition-all shadow-md" id="copy-tooltip">Copied to Clipboard!</span>
+</button>
+<!-- LinkedIn Profile Secondary -->
+<a class="inline-flex items-center gap-1.5 px-4 py-3 rounded-xl bg-surface hover:bg-surface-container border border-outline/80 text-on-surface-variant hover:text-on-surface transition-all text-sm font-semibold" href="https://www.linkedin.com/in/khalid-osman-80b301287/" rel="noopener noreferrer" target="_blank">
+<span>LinkedIn</span>
+<span class="material-symbols-outlined text-[16px] text-tertiary">north_east</span>
+</a>
+</div>
+<!-- Bottom Micro Stat Badges -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
+<div class="p-3.5 rounded-xl bg-surface-container-low border border-outline/60 flex flex-col">
+<span class="font-headline text-2xl text-primary font-bold">35+</span>
+<span class="font-body text-[11px] font-bold text-on-surface-variant uppercase tracking-wider mt-0.5">B2B Deals Closed</span>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-low border border-outline/60 flex flex-col">
+<span class="font-headline text-2xl text-secondary font-bold">4x</span>
+<span class="font-body text-[11px] font-bold text-on-surface-variant uppercase tracking-wider mt-0.5">Google Certified</span>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-low border border-outline/60 flex flex-col">
+<span class="font-headline text-2xl text-tertiary font-bold">150+</span>
+<span class="font-body text-[11px] font-bold text-on-surface-variant uppercase tracking-wider mt-0.5">Technical Briefs</span>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-low border border-outline/60 flex flex-col">
+<span class="font-headline text-2xl text-on-surface font-bold">3.55</span>
+<span class="font-body text-[11px] font-bold text-on-surface-variant uppercase tracking-wider mt-0.5">CGPA (First Class)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Hero Column (5 Cols Portrait Highlight Card) -->
+<div class="lg:col-span-5 relative rounded-xl overflow-hidden bg-surface-container-low border border-outline/70 flex flex-col shadow-sm group">
+<div class="relative w-full h-[380px] sm:h-[420px] lg:h-full min-h-[380px] overflow-hidden">
+<img alt="Khalid Osman Omer - Executive Portrait" class="w-full h-full object-cover object-top filter contrast-[1.02] group-hover:scale-[1.02] transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZ8Zs2PcBp1ivlzquZ-eSeMGHOsU6oG2L_ADC0ci0qzAIlqnoQc5okrEpcqDlNe6GBVXMgUrVrGy4LjXkkcfNpSIjVwNU1hTrRhIU8FGDpNy5xMfMSsVjl8S9_KNNkdFOK7FznJ5H6n3gw8z1wXPlAfoJ0xyjkwJLmdfzw8MlZd4fxF92btM5ffjGxz1bvbxlGFPQe2FZfJDUgGpLApt7T5X9eyNN4sVR3_9lzGdONTNRGMglHW22z"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/85 via-inverse-surface/20 to-transparent"></div>
+<!-- Overlaid Pill Tag -->
+<div class="absolute top-4 left-4 flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface/90 backdrop-blur-md border border-outline/60 shadow-sm">
+<span class="material-symbols-outlined text-primary text-[16px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-body text-xs text-on-surface tracking-wider uppercase font-bold">Verified B2B Lead</span>
+</div>
+<!-- Bottom Metric HUD floating on photo -->
+<div class="absolute bottom-4 inset-x-4 p-4 rounded-xl bg-surface/95 backdrop-blur-md border border-outline/60 shadow-md flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-body text-[10px] uppercase text-on-surface-variant font-bold tracking-wider">Strategic Pipeline Hub</span>
+<span class="font-headline text-base text-on-surface font-semibold">APAC CleanTech &amp; SaaS</span>
+</div>
+<div class="flex items-center gap-2 text-right">
+<div class="w-9 h-9 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. BENTO GRID - EXECUTIVE PROOF POINTS -->
+<section class="flex flex-col gap-6" id="impact-metrics">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-outline/50 pb-4">
+<div>
+<span class="font-body text-xs text-primary uppercase tracking-widest font-bold">01 // Quantitative Dossier</span>
+<h2 class="font-headline text-2xl lg:text-3xl text-on-surface font-semibold mt-1">Executive Proof Points</h2>
+</div>
+<p class="font-body text-sm text-on-surface-variant max-w-md">
+          Measurable commercial impact realized across enterprise renewables, data architecture, and institutional academic honors.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-stretch">
+<!-- Card A (Large Span 7 cols) -->
+<div class="md:col-span-7 p-6 lg:p-8 rounded-xl bg-surface border border-outline/70 shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="flex flex-col gap-3 relative z-10">
+<div class="flex items-center justify-between">
+<span class="px-3 py-1 rounded-full bg-primary-container text-on-primary-container font-body text-xs font-bold uppercase tracking-wider">Outbound Velocity</span>
+<span class="font-code-metric text-xs text-primary flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[16px]">trending_up</span> +140% QoQ
+              </span>
+</div>
+<h3 class="font-headline text-xl text-on-surface font-semibold">35+ Qualified B2B Solar Deals</h3>
+<p class="font-body text-sm text-on-surface-variant max-w-lg leading-relaxed">
+              Architected precision outbound sequences for utility and commercial scale solar developers. Scaled outbound velocity while shortening target acquisition cycles by 28%.
+            </p>
+</div>
+<!-- Mini Pipeline Visualizer (Inline SVG Data Viz) -->
+<div class="pt-6 flex flex-col gap-3 relative z-10">
+<div class="flex justify-between items-baseline font-code-metric text-xs">
+<span class="text-on-surface font-semibold">$1.84M Total Pipeline Velocity</span>
+<span class="text-on-surface-variant">Avg. Deal: $52,500</span>
+</div>
+<!-- SVG Pipeline Sparkline & Bar Matrix -->
+<div class="w-full bg-surface-container-low p-4 rounded-xl border border-outline/60">
+<svg class="w-full h-20 overflow-visible" preserveaspectratio="none" viewbox="0 0 500 90">
+<!-- Grid telemetry lines -->
+<line class="text-outline/40" stroke="currentColor" stroke-dasharray="4 4" stroke-width="1" x1="0" x2="500" y1="20" y2="20"></line>
+<line class="text-outline/40" stroke="currentColor" stroke-dasharray="4 4" stroke-width="1" x1="0" x2="500" y1="50" y2="50"></line>
+<line class="text-outline/40" stroke="currentColor" stroke-dasharray="4 4" stroke-width="1" x1="0" x2="500" y1="80" y2="80"></line>
+<!-- Fill Area -->
+<polygon class="text-primary/10" fill="currentColor" points="0,80 0,65 70,55 140,60 220,38 310,42 400,20 500,8 500,80"></polygon>
+<!-- Stroke Line -->
+<polyline class="text-primary" fill="none" points="0,65 70,55 140,60 220,38 310,42 400,20 500,8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></polyline>
+<!-- Pipeline Data Points -->
+<circle class="fill-surface stroke-primary" cx="70" cy="55" r="4" stroke-width="2"></circle>
+<circle class="fill-surface stroke-primary" cx="220" cy="38" r="4" stroke-width="2"></circle>
+<circle class="fill-surface stroke-primary" cx="400" cy="20" r="4" stroke-width="2"></circle>
+<circle class="fill-primary stroke-surface" cx="500" cy="8" r="5" stroke-width="2"></circle>
+</svg>
+<div class="flex justify-between items-center text-[11px] font-code-metric text-on-surface-variant pt-2.5 border-t border-outline/50 mt-1">
+<span>Q1 Discovery</span>
+<span>Q2 Validation</span>
+<span>Q3 Commercial RFP</span>
+<span class="text-primary font-bold">Q4 Closed Win</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card B (5 cols: Technical Compliance Inbound) -->
+<div class="md:col-span-5 p-6 lg:p-8 rounded-xl bg-surface border border-outline/70 shadow-sm flex flex-col justify-between group">
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="px-3 py-1 rounded-full bg-tertiary-container text-on-tertiary-container font-body text-xs font-bold uppercase tracking-wider">Inbound Authority</span>
+<span class="font-code-metric text-xs text-tertiary font-semibold">45k+ Mo. Reads</span>
+</div>
+<h3 class="font-headline text-xl text-on-surface font-semibold">150+ Compliance Assets</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">
+              Produced deep-dive institutional briefs spanning ESG regulation, clean energy tax incentives, and regional statutory compliance.
+            </p>
+</div>
+<!-- Tag Cloud Pill Matrix -->
+<div class="pt-4 flex flex-wrap gap-1.5">
+<span class="px-2.5 py-1 rounded-full bg-surface-container border border-outline/60 font-code-metric text-xs text-on-surface-variant">#ESG-Frameworks</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container border border-outline/60 font-code-metric text-xs text-on-surface-variant">#RenewableStandards</span>
+<span class="px-2.5 py-1 rounded-full bg-primary-container/60 border border-primary/20 font-code-metric text-xs text-primary font-medium">#APAC-Tariffs</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container border border-outline/60 font-code-metric text-xs text-on-surface-variant">#GridParity</span>
+<span class="px-2.5 py-1 rounded-full bg-secondary-container/80 border border-outline/60 font-code-metric text-xs text-on-secondary-container">#CarbonTaxOffset</span>
+</div>
+<div class="mt-5 p-3 rounded-xl bg-surface-container-low border border-outline/60 flex items-center justify-between">
+<span class="font-body text-xs font-bold text-on-surface-variant uppercase">Conversion Rate</span>
+<span class="font-code-metric text-sm text-tertiary font-bold">14.8% Inbound RFP</span>
+</div>
+</div>
+<!-- Card C (5 cols: Academic Distinction) -->
+<div class="md:col-span-5 p-6 lg:p-8 rounded-xl bg-surface border border-outline/70 shadow-sm flex flex-col justify-between">
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-body text-xs font-bold uppercase tracking-wider">Honor Roll</span>
+<span class="material-symbols-outlined text-secondary text-[22px]">school</span>
+</div>
+<h3 class="font-headline text-xl text-on-surface font-semibold">3.55 CGPA (First Class)</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">
+              Albukhary International University (AIU) • Bachelor of Business Administration (Hons). Concentrated on Strategic Commercial Management &amp; Applied Econometrics.
+            </p>
+</div>
+<div class="mt-6 flex items-center gap-4 p-3.5 rounded-xl bg-surface-container-low border border-outline/60">
+<div class="w-11 h-11 rounded-xl bg-secondary/15 text-secondary flex items-center justify-center font-headline font-bold text-sm">
+              AIU
+            </div>
+<div class="flex flex-col">
+<span class="font-body text-[11px] font-bold text-on-surface-variant uppercase">Academic Award</span>
+<span class="font-body text-sm text-on-surface font-bold">Top 5% Graduating Cohort Honors</span>
+</div>
+</div>
+</div>
+<!-- Card D (7 cols: 4x Google Certified Specialist) -->
+<div class="md:col-span-7 p-6 lg:p-8 rounded-xl bg-surface border border-outline/70 shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="px-3 py-1 rounded-full bg-primary-container text-on-primary-container font-body text-xs font-bold uppercase tracking-wider">Credential Rigor</span>
+<span class="font-body text-xs text-on-surface-variant uppercase tracking-wider font-semibold">Verified Badges</span>
+</div>
+<span class="font-code-metric text-xs text-primary font-bold">4 / 4 Active</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3 my-4">
+<!-- Badge 1 -->
+<div class="p-3 rounded-xl bg-surface-container-low hover:bg-surface-container border border-outline/60 transition-colors flex items-center gap-3 group/badge">
+<div class="w-9 h-9 rounded-xl bg-primary/10 border border-primary/20 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[19px]">psychology</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body text-xs text-on-surface font-bold truncate group-hover/badge:text-primary">Google Advanced AI</span>
+<span class="font-body text-[10px] text-on-surface-variant uppercase">Deep Learning &amp; LLMs</span>
+</div>
+</div>
+<!-- Badge 2 -->
+<div class="p-3 rounded-xl bg-surface-container-low hover:bg-surface-container border border-outline/60 transition-colors flex items-center gap-3 group/badge">
+<div class="w-9 h-9 rounded-xl bg-tertiary/10 border border-tertiary/20 text-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[19px]">analytics</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body text-xs text-on-surface font-bold truncate group-hover/badge:text-tertiary">Google Data Analytics</span>
+<span class="font-body text-[10px] text-on-surface-variant uppercase">SQL, R &amp; Tableau</span>
+</div>
+</div>
+<!-- Badge 3 -->
+<div class="p-3 rounded-xl bg-surface-container-low hover:bg-surface-container border border-outline/60 transition-colors flex items-center gap-3 group/badge">
+<div class="w-9 h-9 rounded-xl bg-secondary/15 border border-secondary/20 text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[19px]">task_alt</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body text-xs text-on-surface font-bold truncate group-hover/badge:text-secondary">Project Management</span>
+<span class="font-body text-[10px] text-on-surface-variant uppercase">Agile &amp; Scrum Lead</span>
+</div>
+</div>
+<!-- Badge 4 -->
+<div class="p-3 rounded-xl bg-surface-container-low hover:bg-surface-container border border-outline/60 transition-colors flex items-center gap-3 group/badge">
+<div class="w-9 h-9 rounded-xl bg-warm-sand/15 border border-warm-sand/20 text-warm-sand flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[19px]">storefront</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body text-xs text-on-surface font-bold truncate group-hover/badge:text-warm-sand">Digital Marketing &amp; E-Com</span>
+<span class="font-body text-[10px] text-on-surface-variant uppercase">Omnichannel Growth</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between text-xs text-on-surface-variant font-code-metric">
+<span>Credential ID: Verified Professional</span>
+<span class="text-primary flex items-center gap-1 hover:underline cursor-pointer font-semibold">
+<span>View Credential Keys</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. INTERACTIVE EXPERIENCE TIMELINE -->
+<section class="flex flex-col gap-6" id="experience">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-outline/50 pb-4">
+<div>
+<span class="font-body text-xs text-primary uppercase tracking-widest font-bold">02 // Commercial Track Record</span>
+<h2 class="font-headline text-2xl lg:text-3xl text-on-surface font-semibold mt-1">Professional Experience</h2>
+</div>
+<!-- Filter Controls -->
+<div class="flex items-center gap-1 p-1 rounded-full bg-surface-container border border-outline/60" id="timeline-filter-bar">
+<button class="filter-btn active-filter px-4 py-1.5 rounded-full font-body text-xs font-bold uppercase tracking-wider text-on-primary bg-primary transition-all shadow-sm" data-filter="all" type="button">All Roles</button>
+<button class="filter-btn px-4 py-1.5 rounded-full font-body text-xs font-bold uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-all" data-filter="b2b" type="button">B2B Commercial</button>
+<button class="filter-btn px-4 py-1.5 rounded-full font-body text-xs font-bold uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-all" data-filter="ops" type="button">Operations &amp; Data</button>
+<button class="filter-btn px-4 py-1.5 rounded-full font-body text-xs font-bold uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-all" data-filter="leadership" type="button">Leadership</button>
+</div>
+</div>
+<!-- Timeline Entries Stack -->
+<div class="flex flex-col gap-4" id="timeline-container">
+<!-- Role 1 -->
+<article class="timeline-item p-6 lg:p-8 rounded-xl bg-surface border border-outline/70 hover:border-primary/40 transition-all shadow-sm flex flex-col gap-4" data-category="b2b ops leadership">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+<div class="flex flex-col">
+<div class="flex items-center gap-3 flex-wrap">
+<h3 class="font-headline text-lg lg:text-xl text-on-surface font-semibold">Senior Commercial Operations &amp; B2B Specialist</h3>
+<span class="px-2.5 py-0.5 rounded-full bg-primary-container text-on-primary-container font-body text-[11px] font-bold uppercase">Current Engagement</span>
+</div>
+<span class="font-body text-sm text-primary font-medium mt-0.5">CleanTech &amp; Enterprise Solutions • APAC HQ</span>
+</div>
+<span class="font-code-metric text-xs text-on-surface-variant px-3 py-1 rounded-full bg-surface-container border border-outline/60 w-fit">2022 — Present</span>
+</div>
+<!-- XYZ Structured Metric Bullets -->
+<ul class="flex flex-col gap-2.5 font-body text-sm text-on-surface-variant list-none pl-0 leading-relaxed">
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[19px] shrink-0 mt-0.5">check_circle</span>
+<span><strong class="text-on-surface font-bold">Achieved 135% outbound quota</strong> by architecting CRM-driven multi-touch sequences across 500+ priority enterprise APAC accounts, unlocking $1.8M in net new pipeline.</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[19px] shrink-0 mt-0.5">check_circle</span>
+<span><strong class="text-on-surface font-bold">Slashed sales cycle latency by 28%</strong> through algorithmic lead qualification scoring models built with HubSpot and Google BigQuery.</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[19px] shrink-0 mt-0.5">check_circle</span>
+<span><strong class="text-on-surface font-bold">Orchestrated a squad of 6</strong> across inbound SDRs, technical compliance advisors, and enterprise onboarding managers, optimizing handoff SLAs by 40%.</span>
+</li>
+</ul>
+<!-- Stack Badges -->
+<div class="flex flex-wrap items-center gap-1.5 pt-2 border-t border-outline/40">
+<span class="font-body text-[11px] font-bold text-on-surface-variant uppercase mr-2">Ecosystem:</span>
+<span class="px-3 py-1 rounded-full bg-surface-container border border-outline/60 font-code-metric text-xs text-on-surface">HubSpot CRM</span>
+<span class="px-3 py-1 rounded-full bg-surface-container border border-outline/60 font-code-metric text-xs text-on-surface">BigQuery</span>
+<span class="px-3 py-1 rounded-full bg-surface-container border border-outline/60 font-code-metric text-xs text-on-surface">SQL</span>
+<span class="px-3 py-1 rounded-full bg-surface-container border border-outline/60 font-code-metric text-xs text-on-surface">Apollo.io</span>
+<span class="px-3 py-1 rounded-full bg-surface-container border border-outline/60 font-code-metric text-xs text-on-surface">Looker Studio</span>
+<span class="px-3 py-1 rounded-full bg-surface-container border border-outline/60 font-code-metric text-xs text-on-surface">Python</span>
+</div>
+</article>
+<!-- Role 2 -->
+<article class="timeline-item p-6 lg:p-8 rounded-xl bg-surface border border-outline/70 hover:border-primary/40 transition-all shadow-sm flex flex-col gap-4" data-category="b2b ops">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+<div class="flex flex-col">
+<h3 class="font-headline text-lg lg:text-xl text-on-surface font-semibold">Business Development &amp; Compliance Analyst</h3>
+<span class="font-body text-sm text-secondary font-medium mt-0.5">Apex Renewable Systems</span>
+</div>
+<span class="font-code-metric text-xs text-on-surface-variant px-3 py-1 rounded-full bg-surface-container border border-outline/60 w-fit">2020 — 2022</span>
+</div>
+<ul class="flex flex-col gap-2.5 font-body text-sm text-on-surface-variant list-none pl-0 leading-relaxed">
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[19px] shrink-0 mt-0.5">check_circle</span>
+<span><strong class="text-on-surface font-bold">Generated 3x surge in inbound enterprise proposals</strong> by publishing 150+ high-authority statutory compliance reports and ESG benchmarks.</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[19px] shrink-0 mt-0.5">check_circle</span>
+<span><strong class="text-on-surface font-bold">Streamlined RFP response mechanics</strong> cutting turnaround intervals from 14 days down to 4 days using Notion API modular content components.</span>
+</li>
+</ul>
+<div class="flex flex-wrap items-center gap-1.5 pt-2 border-t border-outline/40">
+<span class="font-body text-[11px] font-bold text-on-surface-variant uppercase mr-2">Ecosystem:</span>
+<span class="px-3 py-1 rounded-full bg-surface-container border border-outline/60 font-code-metric text-xs text-on-surface">Notion API</span>
+<span class="px-3 py-1 rounded-full bg-surface-container border border-outline/60 font-code-metric text-xs text-on-surface">Google Analytics 4</span>
+<span class="px-3 py-1 rounded-full bg-surface-container border border-outline/60 font-code-metric text-xs text-on-surface">Market Intelligence</span>
+<span class="px-3 py-1 rounded-full bg-surface-container border border-outline/60 font-code-metric text-xs text-on-surface">RFP Automation</span>
+</div>
+</article>
+<!-- Role 3 -->
+<article class="timeline-item p-6 lg:p-8 rounded-xl bg-surface border border-outline/70 hover:border-primary/40 transition-all shadow-sm flex flex-col gap-4" data-category="ops leadership">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+<div class="flex flex-col">
+<h3 class="font-headline text-lg lg:text-xl text-on-surface font-semibold">Commercial Strategy Fellow &amp; Project Lead</h3>
+<span class="font-body text-sm text-tertiary font-medium mt-0.5">AIU Innovation Lab</span>
+</div>
+<span class="font-code-metric text-xs text-on-surface-variant px-3 py-1 rounded-full bg-surface-container border border-outline/60 w-fit">2018 — 2020</span>
+</div>
+<ul class="flex flex-col gap-2.5 font-body text-sm text-on-surface-variant list-none pl-0 leading-relaxed">
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-tertiary text-[19px] shrink-0 mt-0.5">check_circle</span>
+<span><strong class="text-on-surface font-bold">Formulated financial feasibility structures</strong> for early-stage cross-border commerce ventures, presenting models to venture advisory councils.</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-tertiary text-[19px] shrink-0 mt-0.5">check_circle</span>
+<span><strong class="text-on-surface font-bold">Graduated First Class Standing (3.55 CGPA)</strong> with honors dissertation focusing on quantitative predictive modeling for ASEAN trade dynamics.</span>
+</li>
+</ul>
+<div class="flex flex-wrap items-center gap-1.5 pt-2 border-t border-outline/40">
+<span class="font-body text-[11px] font-bold text-on-surface-variant uppercase mr-2">Ecosystem:</span>
+<span class="px-3 py-1 rounded-full bg-surface-container border border-outline/60 font-code-metric text-xs text-on-surface">Financial Modeling</span>
+<span class="px-3 py-1 rounded-full bg-surface-container border border-outline/60 font-code-metric text-xs text-on-surface">SPSS</span>
+<span class="px-3 py-1 rounded-full bg-surface-container border border-outline/60 font-code-metric text-xs text-on-surface">Advanced Excel (VBA)</span>
+<span class="px-3 py-1 rounded-full bg-surface-container border border-outline/60 font-code-metric text-xs text-on-surface">Econometrics</span>
+</div>
+</article>
+</div>
+</section>
+<!-- 4. SKILLS MATRIX & TOOLING ECOSYSTEM -->
+<section class="flex flex-col gap-6" id="competencies">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-outline/50 pb-4">
+<div>
+<span class="font-body text-xs text-primary uppercase tracking-widest font-bold">03 // Competency Architecture</span>
+<h2 class="font-headline text-2xl lg:text-3xl text-on-surface font-semibold mt-1">Skills Matrix &amp; Tooling Ecosystem</h2>
+</div>
+<p class="font-body text-sm text-on-surface-variant max-w-md">
+          A full-stack commercial execution toolkit: from high-ticket deal closing mechanics down to database querying and automation scripts.
+        </p>
+</div>
+<!-- Tab Switcher Navigation -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1" id="skills-tab-nav">
+<button class="skills-tab-btn active-tab px-5 py-2.5 rounded-xl bg-surface border-2 border-primary text-primary font-body text-sm font-bold transition-all shadow-sm" data-tab="tab-sales" type="button">
+          Commercial &amp; Sales Operations
+        </button>
+<button class="skills-tab-btn px-5 py-2.5 rounded-xl bg-surface border border-outline/70 text-on-surface-variant hover:text-on-surface font-body text-sm font-bold transition-all" data-tab="tab-data" type="button">
+          Data &amp; Business Intelligence
+        </button>
+<button class="skills-tab-btn px-5 py-2.5 rounded-xl bg-surface border border-outline/70 text-on-surface-variant hover:text-on-surface font-body text-sm font-bold transition-all" data-tab="tab-ai" type="button">
+          Modern Workflow &amp; AI
+        </button>
+</div>
+<!-- Tab Panels -->
+<div class="p-6 lg:p-8 rounded-xl bg-surface border border-outline/70 shadow-sm" id="skills-tab-content">
+<!-- Tab 1: Commercial & Sales Ops -->
+<div class="tab-panel grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5" id="tab-sales">
+<div class="p-4 rounded-xl bg-surface-container-low border border-outline/60 flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-body text-sm text-on-surface font-bold">Enterprise Outbound Cadence</span>
+<span class="font-code-metric text-xs text-primary font-bold">98% Mastery</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[98%] rounded-full"></div>
+</div>
+<p class="font-body text-xs text-on-surface-variant mt-1 leading-normal">Multi-touch account mapping across C-suite executives in APAC CleanTech.</p>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low border border-outline/60 flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-body text-sm text-on-surface font-bold">CRM Hygiene &amp; Architecture</span>
+<span class="font-code-metric text-xs text-primary font-bold">95% Mastery</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[95%] rounded-full"></div>
+</div>
+<p class="font-body text-xs text-on-surface-variant mt-1 leading-normal">HubSpot pipeline validation, custom properties, and automated stage gates.</p>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low border border-outline/60 flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-body text-sm text-on-surface font-bold">Deal Structuring &amp; Commercial Terms</span>
+<span class="font-code-metric text-xs text-primary font-bold">92% Mastery</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[92%] rounded-full"></div>
+</div>
+<p class="font-body text-xs text-on-surface-variant mt-1 leading-normal">PPA frameworks, Capex vs Opex financial structuring for renewable energy.</p>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low border border-outline/60 flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-body text-sm text-on-surface font-bold">ICP Definition &amp; TAM Analysis</span>
+<span class="font-code-metric text-xs text-primary font-bold">90% Mastery</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[90%] rounded-full"></div>
+</div>
+<p class="font-body text-xs text-on-surface-variant mt-1 leading-normal">Top-down &amp; bottom-up market sizing across industrial manufacturing hubs.</p>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low border border-outline/60 flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-body text-sm text-on-surface font-bold">Pipeline Velocity Forecasting</span>
+<span class="font-code-metric text-xs text-primary font-bold">94% Mastery</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[94%] rounded-full"></div>
+</div>
+<p class="font-body text-xs text-on-surface-variant mt-1 leading-normal">Weighted conversion probability models and quarterly ARR projections.</p>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low border border-outline/60 flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-body text-sm text-on-surface font-bold">Churn Mitigation &amp; Retention</span>
+<span class="font-code-metric text-xs text-primary font-bold">88% Mastery</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[88%] rounded-full"></div>
+</div>
+<p class="font-body text-xs text-on-surface-variant mt-1 leading-normal">Net revenue retention triggers and client onboarding health telemetry.</p>
+</div>
+</div>
+<!-- Tab 2: Data & BI (Hidden by default) -->
+<div class="tab-panel hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5" id="tab-data">
+<div class="p-4 rounded-xl bg-surface-container-low border border-outline/60 flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-body text-sm text-on-surface font-bold">SQL Querying &amp; Data Prep</span>
+<span class="font-code-metric text-xs text-tertiary font-bold">92% Mastery</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full w-[92%] rounded-full"></div>
+</div>
+<p class="font-body text-xs text-on-surface-variant mt-1 leading-normal">CTE expressions, window functions, and multi-table customer journey joins.</p>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low border border-outline/60 flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-body text-sm text-on-surface font-bold">Tableau &amp; Looker Studio Dashboards</span>
+<span class="font-code-metric text-xs text-tertiary font-bold">96% Mastery</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full w-[96%] rounded-full"></div>
+</div>
+<p class="font-body text-xs text-on-surface-variant mt-1 leading-normal">Real-time pipeline dashboards and conversion funnel visualization.</p>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low border border-outline/60 flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-body text-sm text-on-surface font-bold">Statistical Econometrics</span>
+<span class="font-code-metric text-xs text-tertiary font-bold">89% Mastery</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full w-[89%] rounded-full"></div>
+</div>
+<p class="font-body text-xs text-on-surface-variant mt-1 leading-normal">Multivariate linear regressions and price sensitivity modeling.</p>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low border border-outline/60 flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-body text-sm text-on-surface font-bold">Cohort Retention Analysis</span>
+<span class="font-code-metric text-xs text-tertiary font-bold">91% Mastery</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full w-[91%] rounded-full"></div>
+</div>
+<p class="font-body text-xs text-on-surface-variant mt-1 leading-normal">LTV/CAC breakdown across enterprise account segmentation cohorts.</p>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low border border-outline/60 flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-body text-sm text-on-surface font-bold">KPI Tree Hierarchy Architecture</span>
+<span class="font-code-metric text-xs text-tertiary font-bold">95% Mastery</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full w-[95%] rounded-full"></div>
+</div>
+<p class="font-body text-xs text-on-surface-variant mt-1 leading-normal">Cascading departmental metrics tied strictly to bottom-line EBIT contribution.</p>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low border border-outline/60 flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-body text-sm text-on-surface font-bold">Google Sheets &amp; Excel Modeling</span>
+<span class="font-code-metric text-xs text-tertiary font-bold">98% Mastery</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full w-[98%] rounded-full"></div>
+</div>
+<p class="font-body text-xs text-on-surface-variant mt-1 leading-normal">Complex nested formulas, QUERY syntax, pivot engine architecture.</p>
+</div>
+</div>
+<!-- Tab 3: Modern Workflow & AI (Hidden by default) -->
+<div class="tab-panel hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5" id="tab-ai">
+<div class="p-4 rounded-xl bg-surface-container-low border border-outline/60 flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-body text-sm text-on-surface font-bold">Sales Ops Prompt Engineering</span>
+<span class="font-code-metric text-xs text-secondary font-bold">94% Mastery</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full w-[94%] rounded-full"></div>
+</div>
+<p class="font-body text-xs text-on-surface-variant mt-1 leading-normal">Automated hyper-personalized cold outreach via customized LLM agents.</p>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low border border-outline/60 flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-body text-sm text-on-surface font-bold">Make &amp; Zapier Webhook Pipelines</span>
+<span class="font-code-metric text-xs text-secondary font-bold">96% Mastery</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full w-[96%] rounded-full"></div>
+</div>
+<p class="font-body text-xs text-on-surface-variant mt-1 leading-normal">Autonomous enrichment chains syncing forms, CRM databases, and Slack alerts.</p>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low border border-outline/60 flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-body text-sm text-on-surface font-bold">Apollo &amp; Clay Data Enrichment</span>
+<span class="font-code-metric text-xs text-secondary font-bold">92% Mastery</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full w-[92%] rounded-full"></div>
+</div>
+<p class="font-body text-xs text-on-surface-variant mt-1 leading-normal">Scalable account scraping, intent signal triggers, verified phone waterfall.</p>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low border border-outline/60 flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-body text-sm text-on-surface font-bold">Linear &amp; Notion Project Systems</span>
+<span class="font-code-metric text-xs text-secondary font-bold">97% Mastery</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full w-[97%] rounded-full"></div>
+</div>
+<p class="font-body text-xs text-on-surface-variant mt-1 leading-normal">Sprint planning, SLA issue triage, and central commercial knowledge hubs.</p>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low border border-outline/60 flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-body text-sm text-on-surface font-bold">Agile Scrum Delivery in B2B</span>
+<span class="font-code-metric text-xs text-secondary font-bold">90% Mastery</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full w-[90%] rounded-full"></div>
+</div>
+<p class="font-body text-xs text-on-surface-variant mt-1 leading-normal">Bi-weekly pipeline retrospectives, velocity tracking, and bottleneck resolution.</p>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low border border-outline/60 flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-body text-sm text-on-surface font-bold">Python Scripting for Data Ops</span>
+<span class="font-code-metric text-xs text-secondary font-bold">86% Mastery</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full w-[86%] rounded-full"></div>
+</div>
+<p class="font-body text-xs text-on-surface-variant mt-1 leading-normal">Automated CSV parsing, API payload dispatch, and Pandas metric aggregation.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. INTERACTIVE CONTACT DRAWER / SCHEDULING SUITE -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch pt-2 mb-4" id="schedule-suite">
+<!-- Left Pane: Interactive Discovery Call Slot Picker -->
+<div class="lg:col-span-7 p-6 lg:p-8 rounded-xl bg-surface border border-outline/70 shadow-sm flex flex-col justify-between gap-6">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="px-3 py-1 rounded-full bg-primary-container text-on-primary-container font-body text-xs font-bold uppercase tracking-wider">Discovery Calendar</span>
+<div class="flex items-center gap-1.5 text-primary font-code-metric text-xs font-semibold">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span>Available This Week</span>
+</div>
+</div>
+<h2 class="font-headline text-2xl lg:text-3xl text-on-surface font-semibold mt-1">Schedule Strategic Discovery Call</h2>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">
+            Explore commercial partnerships, fractional sales operations leadership, or full-time strategic B2B engagements. Select a preferred 30-min window (GMT+8).
+          </p>
+</div>
+<!-- Interactive Slot Picker Mockup -->
+<div class="flex flex-col gap-4 bg-surface-container-low border border-outline/60 p-5 rounded-xl">
+<div class="flex items-center justify-between font-body text-xs font-bold text-on-surface-variant uppercase tracking-wider">
+<span>Proposed Time Windows (KL Time / GMT+8)</span>
+<span class="text-tertiary">Video Call Via Meet / Zoom</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-3" id="slot-picker-group">
+<button class="slot-btn active-slot p-3.5 rounded-xl text-left transition-all bg-surface border-2 border-primary text-on-surface shadow-sm" type="button">
+<div class="font-body text-sm font-bold text-primary">10:00 AM</div>
+<div class="font-body text-xs text-on-surface-variant">Morning Briefing</div>
+</button>
+<button class="slot-btn p-3.5 rounded-xl text-left transition-all bg-surface border border-outline/70 text-on-surface-variant hover:border-primary/50 hover:text-on-surface" type="button">
+<div class="font-body text-sm font-bold text-on-surface">02:30 PM</div>
+<div class="font-body text-xs text-on-surface-variant">APAC Midday</div>
+</button>
+<button class="slot-btn p-3.5 rounded-xl text-left transition-all bg-surface border border-outline/70 text-on-surface-variant hover:border-primary/50 hover:text-on-surface" type="button">
+<div class="font-body text-sm font-bold text-on-surface">04:00 PM</div>
+<div class="font-body text-xs text-on-surface-variant">Late Afternoon</div>
+</button>
+</div>
+<!-- Quick Confirmation Action -->
+<div class="flex flex-col sm:flex-row items-center gap-3 pt-1">
+<button class="w-full sm:w-auto flex-1 inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-primary hover:bg-primary-hover text-on-primary font-body text-sm font-bold transition-all shadow-md shadow-primary/20" id="confirm-call-btn" type="button">
+<span class="material-symbols-outlined text-[19px]">event_available</span>
+<span id="confirm-call-text">Confirm 10:00 AM Discovery Call</span>
+</button>
+</div>
+</div>
+<div class="flex items-center gap-4 text-on-surface-variant text-xs font-code-metric">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-primary text-[16px]">videocam</span>
+<span>Google Meet</span>
+</span>
+<span>•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-tertiary text-[16px]">screen_share</span>
+<span>Zoom Rooms</span>
+</span>
+<span>•</span>
+<span>30 Minutes Duration</span>
+</div>
+</div>
+<!-- Right Pane: Direct Communication Hub -->
+<div class="lg:col-span-5 p-6 lg:p-8 rounded-xl bg-surface border border-outline/70 shadow-sm flex flex-col justify-between gap-6">
+<div class="flex flex-col gap-1.5">
+<span class="px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-body text-xs font-bold uppercase tracking-wider w-fit">Direct Reach</span>
+<h3 class="font-headline text-2xl lg:text-3xl text-on-surface font-semibold mt-1">Communication Hub</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">
+            Connect directly via secure channels or download verified credentials for hiring boards and stakeholders.
+          </p>
+</div>
+<!-- Action Modules Stack -->
+<div class="flex flex-col gap-3">
+<!-- WhatsApp Chat -->
+<a class="p-3.5 rounded-xl bg-surface-container-low hover:bg-surface border border-outline/70 transition-all flex items-center justify-between group" href="https://wa.me/60175100833" rel="noopener noreferrer" target="_blank">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary/10 border border-primary/20 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body text-sm text-on-surface font-bold group-hover:text-primary transition-colors">WhatsApp Direct Chat</span>
+<span class="font-code-metric text-xs text-on-surface-variant">+60 17 510 0833 (Fast Response)</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:translate-x-1 transition-transform text-[18px]">arrow_forward</span>
+</a>
+<!-- Copy Email Action -->
+<button class="p-3.5 rounded-xl bg-surface-container-low hover:bg-surface border border-outline/70 transition-all flex items-center justify-between text-left group" id="copy-email-pane-btn" type="button">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary/10 border border-primary/20 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">mail</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body text-sm text-on-surface font-bold group-hover:text-primary transition-colors">khaledothman546@gmail.com</span>
+<span class="font-code-metric text-xs text-on-surface-variant" id="copy-pane-status">Click to copy direct address</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors text-[18px]">content_copy</span>
+</button>
+<!-- Download Executive Resume -->
+<a class="p-3.5 rounded-xl bg-surface-container hover:bg-surface border border-outline/70 transition-all flex items-center justify-between group" href="resume_template.html" target="_blank">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-tertiary/15 border border-tertiary/20 text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">description</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body text-sm text-on-surface font-bold group-hover:text-tertiary transition-colors">Executive 1-Page Resume</span>
+<span class="font-code-metric text-xs text-on-surface-variant">PDF Document • Verified Track Record</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:translate-y-0.5 transition-transform text-[18px]">download</span>
+</a>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low border border-outline/60 flex items-center justify-between text-xs font-code-metric text-on-surface-variant">
+<span>Response Window: &lt; 4 Hours</span>
+<span class="text-primary flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[15px]">encrypted</span> End-to-End Encrypted
+          </span>
+</div>
+</div>
+</section>
+</div>
+<!-- Interactive Logic Script -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Copy Email Micro-interaction
+      const copyBtn = document.getElementById('copy-email-btn');
+      const copyTooltip = document.getElementById('copy-tooltip');
+      const copyPaneBtn = document.getElementById('copy-email-pane-btn');
+      const copyPaneStatus = document.getElementById('copy-pane-status');
+
+      function triggerCopy() {
+        const textToCopy = 'khaledothman546@gmail.com';
+        navigator.clipboard.writeText(textToCopy).then(() => {
+          if (copyTooltip) {
+            copyTooltip.classList.remove('opacity-0');
+            setTimeout(() => {
+              copyTooltip.classList.add('opacity-0');
+            }, 2000);
+          }
+          if (copyPaneStatus) {
+            copyPaneStatus.textContent = 'Copied to clipboard!';
+            copyPaneStatus.classList.add('text-primary');
+            setTimeout(() => {
+              copyPaneStatus.textContent = 'Click to copy direct address';
+              copyPaneStatus.classList.remove('text-primary');
+            }, 2500);
+          }
+        });
+      }
+
+      if (copyBtn) copyBtn.addEventListener('click', triggerCopy);
+      if (copyPaneBtn) copyPaneBtn.addEventListener('click', triggerCopy);
+
+      // 2. Timeline Category Filter
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const timelineItems = document.querySelectorAll('.timeline-item');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => {
+            b.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+            b.classList.add('text-on-surface-variant');
+          });
+          btn.classList.remove('text-on-surface-variant');
+          btn.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+
+          const filter = btn.getAttribute('data-filter');
+
+          timelineItems.forEach(item => {
+            const categories = item.getAttribute('data-category') || '';
+            if (filter === 'all' || categories.includes(filter)) {
+              item.style.display = 'flex';
+            } else {
+              item.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // 3. Skills Matrix Tabs
+      const tabBtns = document.querySelectorAll('.skills-tab-btn');
+      const tabPanels = document.querySelectorAll('.tab-panel');
+
+      tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          tabBtns.forEach(b => {
+            b.classList.remove('border-2', 'border-primary', 'text-primary', 'shadow-sm');
+            b.classList.add('border', 'border-outline/70', 'text-on-surface-variant');
+          });
+          btn.classList.remove('border', 'border-outline/70', 'text-on-surface-variant');
+          btn.classList.add('border-2', 'border-primary', 'text-primary', 'shadow-sm');
+
+          const targetId = btn.getAttribute('data-tab');
+          tabPanels.forEach(panel => {
+            if (panel.id === targetId) {
+              panel.classList.remove('hidden');
+            } else {
+              panel.classList.add('hidden');
+            }
+          });
+        });
+      });
+
+      // 4. Time Slot Picker in Schedule Suite
+      const slotButtons = document.querySelectorAll('.slot-btn');
+      const confirmText = document.getElementById('confirm-call-text');
+
+      slotButtons.forEach(slot => {
+        slot.addEventListener('click', () => {
+          slotButtons.forEach(s => {
+            s.classList.remove('border-2', 'border-primary', 'shadow-sm');
+            s.classList.add('border', 'border-outline/70');
+            const h = s.querySelector('.font-bold');
+            if (h) {
+              h.classList.remove('text-primary');
+              h.classList.add('text-on-surface');
+            }
+          });
+
+          slot.classList.remove('border', 'border-outline/70');
+          slot.classList.add('border-2', 'border-primary', 'shadow-sm');
+          const header = slot.querySelector('.font-bold');
+          if (header) {
+            header.classList.remove('text-on-surface');
+            header.classList.add('text-primary');
+            const timeVal = header.textContent.trim();
+            if (confirmText) {
+              confirmText.textContent = `Confirm ${timeVal} Discovery Call`;
+            }
+          }
+        });
+      });
+
+      const confirmBtn = document.getElementById('confirm-call-btn');
+      if (confirmBtn) {
+        confirmBtn.addEventListener('click', () => {
+          const original = confirmBtn.innerHTML;
+          confirmBtn.innerHTML = '<span class="material-symbols-outlined text-[19px] animate-spin">refresh</span><span>Opening Calendar...</span>';
+          setTimeout(() => {
+            confirmBtn.innerHTML = '<span class="material-symbols-outlined text-[19px]">done</span><span>Invite Generated!</span>';
+            setTimeout(() => {
+              confirmBtn.innerHTML = original;
+            }, 3000);
+          }, 700);
+        });
+      }
+    });
+  </script>
+</div></main><footer class="w-full bg-surface border-t border-outline/60 py-10 mt-10"><div class="max-w-[1280px] mx-auto px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6"><div class="flex flex-col gap-1.5 text-center md:text-left"><div class="flex items-center justify-center md:justify-start gap-2.5"><span class="font-headline font-semibold text-base text-on-surface">Khalid Osman Omer</span><span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-primary-container text-on-primary-container font-body text-xs font-bold"><span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>Available for Strategic Engagements</span></div><p class="font-body text-xs text-on-surface-variant">© 2025 Khalid Osman Omer. Executive Portfolio &amp; Commercial Track Record. All rights reserved.</p></div><div class="flex flex-wrap items-center justify-center gap-6"><a class="font-body text-xs font-bold uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" data-path="overview" href="#">Overview</a><a class="font-body text-xs font-bold uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" data-path="impact-metrics" href="#impact-metrics">Metrics</a><a class="font-body text-xs font-bold uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" data-path="experience" href="#experience">Experience</a><a class="font-body text-xs font-bold uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" data-path="credentials-skills" href="#competencies">Competencies</a><a class="font-body text-xs font-bold uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" data-path="contact" href="#schedule-suite">Contact</a></div><div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container border border-outline/60 text-on-surface-variant font-code-metric text-xs"><span class="material-symbols-outlined text-[16px] text-tertiary">schedule</span><span>GMT+8 Kuala Lumpur, Malaysia</span></div></div></footer></body></html>
