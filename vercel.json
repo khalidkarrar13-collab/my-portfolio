@@ -8,6 +8,10 @@
       "dest": "/index.html"
     },
     {
+      "src": "/cv",
+      "dest": "/khalid_osman_cv.pdf"
+    },
+    {
       "src": "/resume",
       "dest": "/resume_template.html"
     },
